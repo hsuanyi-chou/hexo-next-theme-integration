@@ -3,9 +3,9 @@
 ## English
 Hexo NexT V8 theme integration
 1. Integrate Google AdSense and like coin without intrusive modification. 
-2. fix last update time of post incorrect with `gitlab-ci`.
-3. hiding cheering words in `archives` page.
-4. using npm to install NexT theme. Easy to update theme version.
+2. Fix last update time of post incorrect with `gitlab-ci`.
+3. Hiding cheering words in `archives` page.
+4. Using npm to install NexT theme. Easy to update theme version.
 
 ## 中文
 HEXO NEXT主題 V8 懶人包
