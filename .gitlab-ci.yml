@@ -1,0 +1,15 @@
+image: node:lts
+before_script:
+  # Set TimeZone, eg: Asia/Shanghai
+  - export TZ='Asia/Taipei'
+  # Restore last modified time
+  - "git ls-files -z | while read -d '' path; do touch -d \"$(git log -1 --format=\"@%ct\" \"$path\")\" \"$path\"; done"
+pages:
+  script:
+    - npm install
+    - npx hexo deploy
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
